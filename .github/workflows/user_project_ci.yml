@@ -58,6 +58,9 @@ jobs:
           cf setup --pdk ${{ matrix.pdk }} --only-openlane --only-pdk
 
       - name: Harden Designs
+        env:
+          TTY: ""
+          DOCKER_TTY: "" 
         run: |
           set -e
           python3 .github/scripts/get_designs.py --design ${{ github.workspace }}
