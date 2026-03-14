@@ -168,6 +168,8 @@ The design has undergone rigorous verification to ensure contest-ready silicon r
 
 (The step-accumulation of the membrane potential against the leak tick, resulting in a spike and latched IRQ.)
 
+![Sentry-AI Temporal Integration Waveform](images/waveform.png)
+
 ## Repository Structure
 
 ```text
